@@ -143,14 +143,14 @@ class SWE_SplashingPoolScenario : public SWE_Scenario {
   public:
 
     float getBathymetry(float x, float y) {
-       return -250.f;
+       return -150.f;
     };
 
     float getWaterHeight(float x, float y) {
-    	return 250.0f+(5.0f-(x+y)/200);
+    	return 150.0f+(5.0f-(x+y)/50);
     };
 
-	virtual float endSimulation() { return (float) 15; };
+	virtual float endSimulation() { return (float) 500; };
 
     /** Get the boundary positions
      *

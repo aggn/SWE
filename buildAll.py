@@ -55,17 +55,19 @@ import sys
 # possible variables
 #
 vars = collections.OrderedDict({
-    'compiler' : ['gnu', 'intel'],
+#    'compiler' : ['gnu', 'intel'],
+    'compiler' : ['gnu'],
     'compileMode' : ['debug', 'release'],
     'parallelization' : ['none', 'cuda', 'mpi_with_cuda', 'mpi'],
+#    'parallelization' : ['none', 'mpi'],
     'openGL' : ['on', 'off'],
     'openGL_instr' : ['on', 'off'],
     'writeNetCDF' : ['on', 'off'],
     'asagi' : ['on', 'off'],
 #    'solver' : ['rusanov', 'fwave', 'augrie', 'hybrid', 'fwavevec'],
-    'solver' : ['fwave', 'augrie', 'hybrid', 'fwavevec'],
+    'solver' : ['augrie'],
     'vectorize' : ['on', 'off'],
-    'libSDLDir' : ['/work/local'],
+    'libSDLDir' : ['~/git/SWE/libsdldir'],
 })
 
 # Run scons with all combinations
